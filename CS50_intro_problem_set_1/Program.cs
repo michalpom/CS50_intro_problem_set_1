@@ -11,7 +11,20 @@ namespace CS50_intro_problem_set_1
         static void Main(string[] args)
         {
             Console.WriteLine("What is the high of the pyramid?");
-            int high = int.Parse(Console.ReadLine());
+
+            int high = -2;
+            do
+            {
+                var h = Console.ReadLine();
+                bool alldigit = h.All(char.IsDigit);
+
+                if (alldigit == true)
+                {
+                    high = int.Parse(h);
+                }
+
+            } while (!(high > 0 && high < 24));
+
 
             Console.WriteLine("The high is " + high + " and this is how it looks:");
             int level = high;
