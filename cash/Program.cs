@@ -84,7 +84,7 @@ namespace cash
                 }
                 else
                 {
-                    money = 0;
+                    money = 0; //to aviod trash
                     break;
                 }
             }
