@@ -17,9 +17,10 @@ namespace mario_pyramid_v2
             do
             {
                 var h = Console.ReadLine();
-                bool alldigit = h.All(char.IsDigit);
-
-                if (alldigit == true)
+               // bool alldigit = h.All(char.IsDigit);
+                bool dupa = float.TryParse(h, out float h);
+                if (dupa == true)
+                    
                 {
                     high = int.Parse(h);
                 }
@@ -38,7 +39,7 @@ namespace mario_pyramid_v2
                 string brick = new string('#', i + 1);
                 Console.Write(brick);
                 Console.Write("  ");
-                Console.Write(brick);
+
                 Console.WriteLine();
                 level = level - 1;
 
