@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CS50_intro_problem_set_1
+namespace mario_pyramid_v2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("The program draws Mario's one-side pyramid");
+            Console.WriteLine("The program draws Mario's two-side pyramid");
             Console.WriteLine("What is the high of the pyramid?");
 
             int high = -2;
@@ -27,6 +27,7 @@ namespace CS50_intro_problem_set_1
             } while (!(high > 0 && high < 24));
 
 
+
             Console.WriteLine("The high is " + high + " and this is how it looks:");
             int level = high;
 
@@ -34,14 +35,15 @@ namespace CS50_intro_problem_set_1
             {
                 string space = new string(' ', level - 1);
                 Console.Write(space);
-                string brick = new string('#', i + 2);
+                string brick = new string('#', i + 1);
+                Console.Write(brick);
+                Console.Write("  ");
                 Console.Write(brick);
                 Console.WriteLine();
                 level = level - 1;
 
             }
-
-
         }
+
     }
 }
