@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS50_intro_problem_set_1", "CS50_intro_problem_set_1\CS50_intro_problem_set_1.csproj", "{91DF4094-ADA4-4721-ACB3-9C6B99621052}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mario_pyramid", "CS50_intro_problem_set_1\mario_pyramid.csproj", "{91DF4094-ADA4-4721-ACB3-9C6B99621052}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
