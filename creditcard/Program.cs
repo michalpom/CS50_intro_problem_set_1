@@ -16,14 +16,15 @@ namespace creditcard
             int temp2 = 0;
             int dd = ccnumber.Length;
             Console.WriteLine(dd);
-            for (int i = 1; i < ccnumber.Length; i = i + 2)
+            for (
+                int i = ccnumber.Length-2; i>=0; i=i-2)
             {
                 //temp1 = temp1 + (ccnumber[i] * 2) % 10;
 
                 double xx =char.GetNumericValue(ccnumber,i);
                 int n = Convert.ToInt32(xx)*2;
 
-                if (n > 10)
+                if (n >= 10)
                 {
                     int b = (n - n % 10) / 10;
                     int a = n % 10;
@@ -36,14 +37,14 @@ namespace creditcard
 
                 Console.WriteLine(ccnumber[i]);
             }
-            for (int i = 0; i < ccnumber.Length; i = i + 2)
+            for (int i = ccnumber.Length-1; i >=0; i = i -2)
             {
                 double xx = char.GetNumericValue(ccnumber, i);
                 int n = Convert.ToInt32(xx);
                 temp2 = temp2 + n;
             }
 
-            Console.WriteLine(temp1+temp2);
+            Console.WriteLine(temp1+temp2); //if %10 gives 0 number is valid
         }
     }
 }
